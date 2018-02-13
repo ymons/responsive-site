@@ -1,0 +1,119 @@
+/* Scss Document */
+@import url("https://fonts.googleapis.com/css?family=Italianno|Libre+Baskerville");
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #444444;
+  font-size: 1.4rem;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.6;
+  letter-spacing: .1em;
+  background-color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center 15%;
+  height: 500px; }
+  @media screen and (max-width: 768px) {
+    header {
+      height: 250px; } }
+
+h1, h2, h3 {
+  font-family: "Italianno", cursive; }
+
+h1 {
+  font-size: 15vw;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 4px 6px rgba(115, 80, 77, 0.7), 0 0 0 rgba(172, 120, 106, 0.8), 1px 4px 6px rgba(115, 80, 77, 0.7);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-animation: txt_animation 3s forwards;
+  animation: txt_animation 3s forwards; }
+@-webkit-keyframes txt_animation {
+  0% {
+    opacity: .5;
+    letter-spacing: -1rem; }
+  100% {
+    opacity: 1;
+    letter-spacing: .8rem; } }
+@keyframes txt_animation {
+  0% {
+    opacity: 0;
+    letter-spacing: -1rem; }
+  100% {
+    opacity: 1;
+    letter-spacing: .8rem; } }
+h2 {
+  font-size: 8rem;
+  line-height: 1;
+  letter-spacing: .3rem;
+  text-align: center; }
+
+h3 {
+  font-size: 6rem;
+  line-height: .6;
+  letter-spacing: .5rem;
+  color: #95cbd5;
+  margin-bottom: 2vh;
+  border-bottom: 1px solid #95cbd5; }
+
+@media screen and (min-width: 769px) and (max-width: 880px) {
+  h3 {
+    letter-spacing: 0; } }
+span[class^="btn"] {
+  text-align: center; }
+  span[class^="btn"] a {
+    border-radius: .3rem; }
+
+main {
+  max-width: 1000px;
+  margin: 10vh auto;
+  padding: 0 2%; }
+
+section ~ section {
+  margin-top: 10vh; }
+
+#menu {
+  letter-spacing: -.4em; }
+  #menu .l-grid {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: calc(100% / 3 - 1vw);
+    margin: 1vw 1vw 1vw 0;
+    letter-spacing: normal; }
+    @media screen and (max-width: 768px) {
+      #menu .l-grid {
+        width: 100%;
+        margin-bottom: 6vh; } }
+    #menu .l-grid p {
+      margin-top: 2vh; }
+      #menu .l-grid p .btn-details a {
+        color: #ffffff;
+        background-color: #95cbd5;
+        padding: 1vh 2vh; }
+  #menu .l-grid:nth-of-type(3n) {
+    margin-right: 0; }
+
+footer {
+  max-width: 1000px;
+  margin: 10vh auto; }
+  footer p {
+    text-align: center;
+    margin-top: 4vh; }
+    footer p .btn-contact a {
+      color: #ffffff;
+      background-color: #ffc0d3;
+      padding: 2vh 4vh; }
+
+/*# sourceMappingURL=style.css.map */
